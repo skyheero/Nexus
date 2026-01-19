@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Nexus</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script>
+		// Record earliest timestamp to measure until Svelte page onMount
+		window.__appStart = (typeof performance !== 'undefined' && performance.now) ? performance.now() : Date.now();
+		if (typeof performance !== 'undefined' && performance.mark) {
+			performance.mark('app_html_loaded');
+		}
+	</script>
+	
+		<link rel="modulepreload" href="./_app/immutable/entry/start.WtTRpQQe.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/-4ANX-ws.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CPmqCMFw.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/D0vQnvVS.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CO_K9f6t.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.DkjldPYe.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/B-i6IADF.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/C6YD7MYL.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CDP7CzqO.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CnvTZ_2Y.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DKRVt_Ij.js">
+</head>
+
+<body data-sveltekit-preload-data="hover">
+	<div class="full-height-container"></div>
+	<div style="display: contents">
+			<script>
+				{
+					__sveltekit_4uynw5 = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						assets: "/Nexus"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./_app/immutable/entry/start.WtTRpQQe.js"),
+						import("./_app/immutable/entry/app.DkjldPYe.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+</body>
+
+</html>
